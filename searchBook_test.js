@@ -1,6 +1,6 @@
 Feature('findBook');
 
-Scenario('test something', (I, googleHomePage, googleResultsPage, iliteraturaPage) => {
+Scenario('GOOGLE - iliteratura', (I, googleHomePage, googleResultsPage, iliteraturaPage) => {
     I.amOnPage('https://google.cz');
     googleHomePage.enterString('iliteratura');
     googleResultsPage.clickFoundLink();
@@ -8,7 +8,7 @@ Scenario('test something', (I, googleHomePage, googleResultsPage, iliteraturaPag
     
 });
 
-Scenario('Seznam - iliteratura', (I, homeSeznamPage, seznamResultsPage, iliteraturaPage) => {
+Scenario('SEZNAM - iliteratura', (I, homeSeznamPage, seznamResultsPage, iliteraturaPage) => {
     homeSeznamPage.enterPage('iliteratura');
     seznamResultsPage.clickRecenze();
     iliteraturaPage.findTitul();
