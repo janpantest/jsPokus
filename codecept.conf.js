@@ -22,6 +22,7 @@ exports.config = {
     homeSeznamPage: './pages/homeSeznam.js',
     seznamResultsPage: './pages/seznamResults.js',
     idnesHomePage: './pages/idnesHome.js',
+    kzvalmezPage: './pages/kzvalmez.js',
   },
   bootstrap: null,
   mocha: {},

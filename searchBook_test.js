@@ -26,3 +26,9 @@ Scenario('iDnes - hover', async(I, idnesHomePage) => {
     I.seeInSource('Jihomorav')
 
 })
+
+Scenario('KZvalmez - hover', (I, kzvalmezPage) => {
+    I.amOnPage('https://kzvalmez.cz')
+    kzvalmezPage.clickMklubLink();
+    I.seeInTitle('M-Klub');
+})
