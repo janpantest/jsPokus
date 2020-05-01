@@ -7,8 +7,8 @@ module.exports = {
   },
 
   clickFoundLink() {
+    I.seeInTitle('Hledat Googlem')
     I.click(this.locators.foundLink)
   },
 
-  // insert your locators and methods here
 }
