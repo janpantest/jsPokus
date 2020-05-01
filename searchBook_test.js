@@ -15,5 +15,14 @@ Scenario('SEZNAM - iliteratura', (I, homeSeznamPage, seznamResultsPage, iliterat
     seznamResultsPage.clickRecenze();
     iliteraturaPage.findTitul();
 
-    // pause()
 });
+
+Scenario('iDnes - hover', async(I, idnesHomePage) => {
+    var assert = require('assert');
+    I.amOnPage('https://idnes.cz');
+    idnesHomePage.brnoRegion();
+    let region = await I.grabTextFrom({xpath: "(//h3/a)[1]"})
+    assert.equal(region, 'Brno')
+    I.seeInSource('Jihomorav')
+
+})

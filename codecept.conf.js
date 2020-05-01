@@ -21,6 +21,7 @@ exports.config = {
     iliteraturaPage: './pages/iliteratura.js',
     homeSeznamPage: './pages/homeSeznam.js',
     seznamResultsPage: './pages/seznamResults.js',
+    idnesHomePage: './pages/idnesHome.js',
   },
   bootstrap: null,
   mocha: {},
