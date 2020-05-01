@@ -9,8 +9,6 @@ module.exports = {
   },
 
   enterPage(string) {
-    I.amOnPage('https://seznam.cz');
-    I.seeInTitle('Seznam');
     I.waitForElement(this.locators.searchField);
     I.fillField(this.locators.searchField, string);
     I.click(this.locators.foundOption);
