@@ -30,5 +30,12 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     }
+  },
+  rerun: {
+    // how many times all tests should pass
+    minSuccess: 2,
+
+    // how many times to try to rerun all tests
+    maxReruns: 5,
   }
 }
