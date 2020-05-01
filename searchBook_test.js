@@ -5,5 +5,5 @@ Scenario('test something', (I, googleHomePage, googleResultsPage, iliteraturaPag
     googleHomePage.enterString('iliteratura');
     googleResultsPage.clickFoundLink();
     iliteraturaPage.findTitul();
-    // pause()
+    pause()
 });
