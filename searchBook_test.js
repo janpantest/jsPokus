@@ -5,5 +5,13 @@ Scenario('test something', (I, googleHomePage, googleResultsPage, iliteraturaPag
     googleHomePage.enterString('iliteratura');
     googleResultsPage.clickFoundLink();
     iliteraturaPage.findTitul();
-    pause()
+    
+});
+
+Scenario('Seznam - iliteratura', (I, homeSeznamPage, seznamResultsPage, iliteraturaPage) => {
+    homeSeznamPage.enterPage('iliteratura');
+    seznamResultsPage.clickRecenze();
+    iliteraturaPage.findTitul();
+
+    // pause()
 });

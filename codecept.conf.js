@@ -19,6 +19,8 @@ exports.config = {
     googleHomePage: './pages/googleHome.js',
     googleResultsPage: './pages/googleResults.js',
     iliteraturaPage: './pages/iliteratura.js',
+    homeSeznamPage: './pages/homeSeznam.js',
+    seznamResultsPage: './pages/seznamResults.js',
   },
   bootstrap: null,
   mocha: {},
