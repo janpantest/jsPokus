@@ -39,3 +39,11 @@ Scenario('GOOGLE - kzvalmez', (I, googleHomePage, googleResultsPage, kzvalmezPag
     kzvalmezPage.clickMklubLink();
     I.seeInTitle('Klub')
 })
+
+Scenario('SEZNAM - kzvalmez', (I, homeSeznamPage, seznamResultsPage, kzvalmezPage) => {
+    I.amOnPage('https://seznam.cz');
+    homeSeznamPage.enterPage('kzvalmez');
+    seznamResultsPage.clickKz();
+    kzvalmezPage.clickMklubLink();
+    I.seeInTitle('Klub');
+})
