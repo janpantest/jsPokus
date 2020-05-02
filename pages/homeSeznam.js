@@ -9,6 +9,7 @@ module.exports = {
   },
 
   enterPage(string) {
+    I.seeInTitle('Seznam');
     I.waitForElement(this.locators.searchField);
     I.fillField(this.locators.searchField, string);
     I.click(this.locators.foundOption);

@@ -10,7 +10,6 @@ Scenario('GOOGLE - iliteratura', (I, googleHomePage, googleResultsPage, iliterat
 
 Scenario('SEZNAM - iliteratura', (I, homeSeznamPage, seznamResultsPage, iliteraturaPage) => {
     I.amOnPage('https://seznam.cz');
-    I.seeInTitle('Seznam');
     homeSeznamPage.enterPage('iliteratura');
     seznamResultsPage.clickRecenze();
     iliteraturaPage.findTitul();

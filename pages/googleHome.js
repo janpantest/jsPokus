@@ -9,6 +9,7 @@ module.exports = {
   },
 
   enterString(string) {
+    I.seeInTitle('Google');
     I.seeElement(this.locators.searchField);
     I.fillField(this.locators.searchField, string);
     I.click(this.locators.visibleOption);
