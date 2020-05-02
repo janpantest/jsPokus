@@ -3,12 +3,18 @@ const { I } = inject();
 module.exports = {
 
   locators: {
-    foundLink: "//a[./text()='Recenze']"
+    clickRecenze: "//a[./text()='Recenze']",
+    clickKzvalmez: "//h3[./text()='kz valmez']",
   },
 
-  clickFoundLink() {
-    I.seeInTitle('Hledat Googlem')
-    I.click(this.locators.foundLink)
+  clickRecenze() {
+    I.seeInTitle('Hledat Googlem');
+    I.click(this.locators.clickRecenze);
   },
+
+  clickKzvalmez() {
+    I.seeInTitle('Hledat Googlem');
+    I.click(this.locators.clickKzvalmez);
+  }
 
 }

@@ -3,7 +3,7 @@ Feature('findBook');
 Scenario('GOOGLE - iliteratura', (I, googleHomePage, googleResultsPage, iliteraturaPage) => {
     I.amOnPage('https://google.cz');
     googleHomePage.enterString('iliteratura');
-    googleResultsPage.clickFoundLink();
+    googleResultsPage.clickRecenze();
     iliteraturaPage.findTitul();
     
 });
@@ -30,4 +30,12 @@ Scenario('KZvalmez - hover', (I, kzvalmezPage) => {
     I.amOnPage('https://kzvalmez.cz')
     kzvalmezPage.clickMklubLink();
     I.seeInTitle('M-Klub');
+})
+
+Scenario('GOOGLE - kzvalmez', (I, googleHomePage, googleResultsPage, kzvalmezPage) => {
+    I.amOnPage('https://google.cz');
+    googleHomePage.enterString('kzvalmez')
+    googleResultsPage.clickKzvalmez();
+    kzvalmezPage.clickMklubLink();
+    I.seeInTitle('Klub')
 })
