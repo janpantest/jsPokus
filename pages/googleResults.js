@@ -4,7 +4,7 @@ module.exports = {
 
   locators: {
     clickRecenze: "//a[./text()='Recenze']",
-    clickKzvalmez: "//h3[./text()='kz valmez']",
+    clickKzvalmez: "//h3[./text()='Kulturní zařízení Valašského Meziříčí']",
   },
 
   clickRecenze() {
