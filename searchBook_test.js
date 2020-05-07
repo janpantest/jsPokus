@@ -8,9 +8,9 @@ Scenario('GOOGLE - iliteratura', (I, googleHomePage, googleResultsPage, iliterat
     
 });
 
-Scenario('SEZNAM - iliteratura', (I, homeSeznamPage, seznamResultsPage, iliteraturaPage) => {
+Scenario('SEZNAM - iliteratura', (I, seznamHomePage, seznamResultsPage, iliteraturaPage) => {
     I.amOnPage('https://seznam.cz');
-    homeSeznamPage.enterPage('iliteratura');
+    seznamHomePage.enterPage('iliteratura');
     seznamResultsPage.clickRecenze();
     iliteraturaPage.findTitul();
 
@@ -40,9 +40,9 @@ Scenario('GOOGLE - kzvalmez', (I, googleHomePage, googleResultsPage, kzvalmezPag
     I.seeInTitle('Klub')
 })
 
-Scenario('SEZNAM - kzvalmez', (I, homeSeznamPage, seznamResultsPage, kzvalmezPage) => {
+Scenario('SEZNAM - kzvalmez', (I, seznamHomePage, seznamResultsPage, kzvalmezPage) => {
     I.amOnPage('https://seznam.cz');
-    homeSeznamPage.enterPage('kzvalmez');
+    seznamHomePage.enterPage('kzvalmez');
     seznamResultsPage.clickKz();
     kzvalmezPage.clickMklubLink();
     I.seeInTitle('Klub');
