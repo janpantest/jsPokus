@@ -4,8 +4,8 @@ module.exports = {
 
   locators: {
     searchField: "//input[@name='q']",
-    visibleOption: "(//div[@class='sbtc'])[1]",
-    submitButton: "(//div[@class='sbtc'])[1]",
+    visibleOption: "(//div[@class='sbl1'])[1]",
+    submitButton: "(//div[@class='sbl1'])[1]",
   },
 
   enterString(string) {
