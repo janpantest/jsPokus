@@ -10,8 +10,10 @@ Scenario('GOOGLE - iliteratura', (I, googleHomePage, googleResultsPage, iliterat
 
 Scenario('SEZNAM - iliteratura', (I, seznamHomePage, seznamResultsPage, iliteraturaPage) => {
     I.amOnPage('https://seznam.cz');
-    seznamHomePage.enterPage('iliteratura');
-    seznamResultsPage.clickRecenze();
+    // seznamHomePage.enterPage('iliteratura');
+    seznamHomePage.enterPage('iliteratura recenze');
+    // seznamResultsPage.clickRecenze();
+    seznamResultsPage.clickIliteraturaRecenze();
     iliteraturaPage.findTitul();
 
 });
@@ -32,8 +34,11 @@ Scenario('KZvalmez - hover', (I, kzvalmezPage) => {
     I.seeInTitle('M-Klub');
 })
 
-Scenario('GOOGLE - kzvalmez', (I, googleHomePage, googleResultsPage, kzvalmezPage) => {
-    I.amOnPage('https://google.cz');
+Scenario('GOOGLE - kzvalmez', (I, googleHomePage, googleResultsPage, kzvalmezPage, googleInputPage) => {
+    googleInputPage.acceptAgreement();
+    I.switchToPreviousTab(0);
+    // googleInputPage.enterString('kzvalmez');
+    // I.amOnPage('https://google.cz');
     googleHomePage.enterString('kzvalmez')
     googleResultsPage.clickKzvalmez();
     kzvalmezPage.clickMklubLink();
